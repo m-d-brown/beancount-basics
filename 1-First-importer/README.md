@@ -1,15 +1,24 @@
 # Step 1: Simple importer
 
-```
-% ./import.py --downloads Downloads identify
+This step adds an import script called [import.py](import.py) that will
+convert transactions downloaded as a CSV file
+[Downloads/activity_2020-12-23.csv](Downloads/activity_2020-12-23.csv)
+into records that can be added to [ledger.bean](ledger.bean).
+
+First run:
+
+```console
+$ ./import.py --downloads Downloads identify
 **** /beancount-basics/1-First-importer/Downloads/activity_2020-12-23.csv
 Importer:    __main__.CreditCardImporter
 Account:     Liabilities:MyBank:CreditCard
 ```
 
-``` 
-% ./import.py --downloads Downloads extract -e ledger.bean > update.bean
-% cat update.bean
+Then run:
+
+```console
+$ ./import.py --downloads Downloads extract -e ledger.bean > update.bean
+$ cat update.bean
 **** /Users/mdbrown/beancount-basics/1-First-importer/Downloads/activity_2020-12-23.csv
 
 2020-11-29 * "LOCAL GAS STATION - PAT BEAN"
