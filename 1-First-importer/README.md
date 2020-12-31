@@ -31,3 +31,5 @@ $ cat update.bean
   Assets:PintoBank:Checking  2500 USD
 
 ```
+
+TODO: Discuss manually matching each transaction with a second account.

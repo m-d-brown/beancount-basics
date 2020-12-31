@@ -17,3 +17,9 @@ self-contained ledger and code.
   that acts as the foundation. There's no code yet at this stage.
 * **[1-First-importer/](1-First-importer/README.md)**: A simple importer
   to demonstrate how to add transactions to the ledger.
+* **[2-Multiple-importers/](2-Multiple-importers/README.md)**: An
+  additional importer, with refactoring to show how to compose different input
+  handling with reusable common code.
+* **[3-Automatically-match-to-other-account/](3-Automatically-match-to-other-account/README.md)**:
+  Logic to automatically match each transaction to a second account, which
+  is crucial to use double-entry accounting with minimal effort.
