@@ -1,0 +1,4 @@
+Account Number,Transaction Date,Transaction Amount,Transaction Type,Transaction Description
+4444,12/01/20,2500,Credit,Payroll ADZUKI.COM
+4444,12/01/20,-2000,Debit,Monthly rent
+4444,12/15/20,2500,Credit,Payroll ADZUKI.COM
