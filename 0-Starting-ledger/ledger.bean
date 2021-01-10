@@ -13,10 +13,14 @@ option "operating_currency" "USD"
 
 2020-12-01 open Assets:PintoBank:Checking
 2020-12-01 open Liabilities:PintoBank:CreditCard
+2020-12-01 open Equity:Opening-Balances
 2020-12-01 open Income:AdzukiDotCom:Salary
 2020-12-01 open Expenses:Food:Restaurant
 
-; Set up initial balances
+; Set up initial balances.
+; The pad statement needs to precede the balance statement. Since a pad
+; is interpreted for the end of the day and the balance is interpreted for the
+; start of the day, the blanace needs to happen for the next day.
 2020-12-01 pad Assets:PintoBank:Checking Equity:Opening-Balances
-2020-12-01 balance Assets:PintoBank:Checking    1000 USD
+2020-12-02 balance Assets:PintoBank:Checking    1000 USD
 

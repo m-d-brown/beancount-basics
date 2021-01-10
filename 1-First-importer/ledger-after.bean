@@ -24,11 +24,14 @@ option "operating_currency" "USD"
 
 2020-12-01 * "Payroll ADZUKI.COM"
   Assets:PintoBank:Checking  2500 USD
+  TODO:MatchMe                       
 
 2020-12-01 * "Monthly rent"
   Assets:PintoBank:Checking  -2000 USD
+  TODO:MatchMe                        
 
 2020-12-15 * "Payroll ADZUKI.COM"
   Assets:PintoBank:Checking  2500 USD
+  TODO:MatchMe                       
 
 
