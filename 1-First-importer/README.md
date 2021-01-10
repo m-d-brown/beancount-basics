@@ -1,11 +1,19 @@
-# Step 1: Simple importer
+# Step 1: First importer, using transactions from a CSV file
 
-This step adds an import script called [import.py](import.py) that will
+This step adds an import script called [`import.py`](import.py) that will
 convert transactions downloaded as a CSV file
-[Downloads/statement.csv](Downloads/statement.csv)
-into records that can be added to [ledger-before.bean](ledger-before.bean).
+[`Downloads/statement.csv`](Downloads/statement.csv)
+into records that can be added to [`ledger-before.bean`](ledger-before.bean).
+`import.py` is the idiomatic name for script in the Beancount community.
 
-First run:
+The expected workflow for importing transactions is:
+
+1. TODO: bank, view transactions, download CSV,
+2. TODO: discuss how future steps simplify by importing from a PDF statement
+
+TODO: Discuss how `import.py` is structured internally.
+
+To use the script, first run:
 
 ```console
 $ ./import.py --downloads Downloads identify

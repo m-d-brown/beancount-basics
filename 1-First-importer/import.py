@@ -42,6 +42,7 @@ class CheckingImporter(importer.ImporterProtocol):
 
                 postings = [
                     data.Posting(self.account, amt, None, None, None, None),
+                    data.Posting('TODO:MatchMe', None, None, None, None, None),
                 ]
 
                 entries.append(data.Transaction(
